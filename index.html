@@ -1,0 +1,36 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="index.css">
+        <script src="index.js"></script>
+    </head>
+    <body>
+                <h1>Students entered:</h1>
+                <h2 id="count-el">0</h2>
+                <button id="increment-btn"onclick="increment()">INCREMENT</button>
+                <button id="save-btn" onclick="save()">SAVE</button>
+                <p id="ptext">Previous Entires: </p>
+                <button id="change" onclick="ChangeImage()">Click To Change Image</button>
+           <script>
+            let num = 0
+            function ChangeImage(){
+               num++
+               if(num ==1){
+                document.body.style.backgroundImage = "url('logo.jpg')";
+               }
+               if(num==2){
+                document.body.style.backgroundImage = "url('inside.jpg')";
+               }
+               if(num == 3){
+                document.body.style.backgroundImage = "url('audi.jpg')";
+               }
+               if(num==4){
+                document.body.style.backgroundImage = "url('inaudi.jpg')";
+               }
+               if(num == 5){
+                document.body.style.backgroundImage = "url('bk-Tech.jpg')";
+                num=0
+               }
+            }
+           </script>
+            </body>
+</html>
